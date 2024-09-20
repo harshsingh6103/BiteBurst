@@ -8,6 +8,7 @@ const ErrorElement = ()=>{
     return(
         <div>
             <h1>OOPs Something went wrong</h1>
+            <p>{err.status} : {err.statusText}</p>
         </div>
     );
 };

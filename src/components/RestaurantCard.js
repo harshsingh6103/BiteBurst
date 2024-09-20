@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { CDN_URL } from "../utils/constants";
+
 
 const RestaurantCard = (props) => {
   const { resData } = props;
@@ -19,10 +21,13 @@ const RestaurantCard = (props) => {
             <p>{cuisines.join(" , ")}</p>
             <p>Rating: {avgRating}</p>
             <br />
-            {/* Provide a meaningful link */}
-            <a href={`#/${name}`} className="btn btn-primary">
-              View Details
-            </a>
+           
+            {/* <a href={`#/${name}`} className="btn btn-primary"> */}
+            <Link to="/"  className="btn btn-primary">
+                View Details
+                </Link>
+              
+            
           </div>
         </div>
       </div>
